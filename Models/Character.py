@@ -1,6 +1,6 @@
-from enum import Enum
+
 class character:
-    def __init__(self,altura,largura,nome):
+    def __init__(self,altura,largura,nome,vida,attacks):
         self._altura=altura;
         self._largura=largura;
         self._nome=nome;
@@ -16,11 +16,14 @@ class character:
     
     def attacks(self):
         return self._attacks;
+        
+    def vida(self):
+        return self._vida;
 
-class characterName (Enum):
-    Generic = 1
-    Marceline = 2
-    
+
+
+    Example = character(1.65,1.10,characterName.Marceline,2000)
+
 
 
     
